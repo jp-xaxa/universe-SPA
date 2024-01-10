@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  --color-text-one: #aaaaaa;
+  --color-tex-two: #02799d;
+  --color-white: white;
+}
+
+body {
+  background: url("./assets/mountains-universe-1.png") no-repeat;
+  background-size: 100% 100vh;
+  position: relative;
+}
+
+.bodyHome {
+  background: url("./assets/mountains-universe-1.png") no-repeat;
+  background-size: 100% 100vh;
+}
+
+.bodyUniverse {
+  background: url("./assets/mountains-universe02.png") no-repeat;
+  background-size: 100% 100vh;
+}
+
+.bodyExplore {
+  background: url("./assets/mountains-universe-3.png") no-repeat;
+  background-size: 100% 100vh;
+}
+
+nav {
+  padding: 4rem 7.2rem;
+
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--color-text-one);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: var(--color-white);
+}
+
+.active {
+  color: var(--color-white);
+}
+
+/*Conteúdo da página Home*/
+.contantHome {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  margin-top: -13rem;
+  place-items: center;
+}
+
+.contantHome h1 {
+  color: var(--color-white);
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-bottom: 2rem;
+}
+
+.contantHome a {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+
+  background: transparent;
+  border: 2px var(--color-white) solid;
+  border-radius: 0.6rem;
+
+  padding: 1.2rem 3.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contantHome a:hover {
+  background: var(--color-white);
+  color: var(--color-tex-two);
+}
+
+/*Conteúdo da página Universo e Explore*/
+.contantUniverse,
+.contantExplore {
+  height: calc(100vh - 10rem);
+  display: grid;
+  place-content: center;
+  margin-top: -10rem;
+  padding: 10.2rem;
+}
+.contantUniverse h1,
+.contantExplore h1 {
+  color: var(--color-white);
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-bottom: 2rem;
+}
+
+.contantUniverse p,
+.contantExplore p {
+  color: var(--color-white);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  width: min(640px, 90%);
+}
+
+/*Erro*/
+.contantErro404 {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  margin-top: -13rem;
+  place-items: center;
+}
+
+.contantErro404 h1 {
+  color: var(--color-white);
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.contantErro404 p {
+  color: var(--color-white);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  width: min(640px, 90%);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contantErro404 a {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+
+  background: transparent;
+  border: 2px var(--color-white) solid;
+  border-radius: 0.6rem;
+
+  padding: 1.2rem 3.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contantErro404 a:hover {
+  background: var(--color-white);
+  color: var(--color-tex-two);
+}
