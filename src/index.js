@@ -1,10 +1,5 @@
 import { Router } from "./router.js"
-import {
-  home,
-  universe,
-  explore,
-  bodyBackground,
-} from "./controls.js"
+import { home, universe, explore, bodyBackground } from "./controls.js"
 
 home.addEventListener("click", () => {
   home.classList.add("active")
